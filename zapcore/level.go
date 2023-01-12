@@ -126,6 +126,14 @@ func (l Level) String() string {
 		return "panic"
 	case FatalLevel:
 		return "fatal"
+	case 6:
+		return "ErrorLogLevel1"
+	case 7:
+		return "ErrorLogLevel2"
+	case 8:
+		return "ErrorLogLevel3"
+	case 9:
+		return "ErrorLogLevel4"
 	default:
 		return fmt.Sprintf("Level(%d)", l)
 	}
@@ -150,14 +158,6 @@ func (l Level) CapitalString() string {
 		return "PANIC"
 	case FatalLevel:
 		return "FATAL"
-	case 6:
-		return "ErrorLogLevel1"
-	case 7:
-		return "ErrorLogLevel2"
-	case 8:
-		return "ErrorLogLevel3"
-	case 9:
-		return "ErrorLogLevel4"
 	default:
 		return fmt.Sprintf("LEVEL(%d)", l)
 	}
